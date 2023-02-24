@@ -130,7 +130,7 @@ body {
 .card__face--back {
   /* background: blue; */
   /* background-image: url('./card_bg.jpg'); */
-  background-image: url('../img/bg1.jpg');
+  background-image: url('../../img/bg1.jpg');
   backdrop-filter: blur(8px);
   background-size: cover;
   background-position: center;
