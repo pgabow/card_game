@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Игра "Пары"</title>
+  </head>
+  <body>
+		<div class="screen start">
+      <h1 class="start__header">Игра "Пары"</h1>
+      <p class="start__description">Ищем одинаковые пары карт</p>
+			<button class="btn start-btn level-btn" id="start">Начать игру</button>
+    </div>
+
+		<div class="screen level">
+			<h1 class="level__header">Выберите уровень:</h1>
+      <ul class="level__list" id="level-list">
+        <li>
+          <button class="btn level-btn" data-level="1">Просто</button>
+        </li>
+        <li>
+          <button class="btn level-btn" data-level="4">Средне</button>
+        </li>
+        <li>
+          <button class="btn level-btn" data-level="8">Сложно</button>
+        </li>
+      </ul>
+    </div>
+
+		<div class="screen">
+      <div class="container" id="board"></div>
+    </div>
+
+		<div class="screen over">
+      <h1>Game over ;)</h1>
+      <p class="over__description"></p>
+      <p class="over__description-level"></p>
+      <p class="over__description-time"></p>
+			<button class="btn start-btn level-btn" id="over">Начать игру</button>
+    </div>
+
+    <div class="modal" data-modal="1">
+      <svg class="modal__cross modal-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <path
+          d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"
+        />
+      </svg>
+      <p class="modal__title">Идете на рекорд!</p>
+      <p class="modal__description"></p>
+      <p class="modal__description-time"></p>
+    </div>
+    <div class="overlay overlay-modal"></div>
+    <script src="./js/cards.js"></script>
+    <script src="./js/modal.js"></script>
+  </body>
+</html>
