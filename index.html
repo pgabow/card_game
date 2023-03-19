@@ -4,18 +4,47 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link type="Image/x-icon" href="./favicon.ico" rel="icon" />
+    <meta name="description" content="Card game" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no"
+    />
+    <meta http-equiv="author" content="P.Gabov" />
+    <meta name="robots" content="noindex,follow" />
+    <meta name="discription" content="Card game" />
+    <meta
+      name="keywords"
+      content="верстка, разработка, сайт, лендинг, landing, landing-page, html, html5, css3, javascript, js, ajax, nodejs, react, redux, npm"
+    />
+    <meta property="og:locale" content="ru_RU" />
+    <meta name="Address" content="Россия, Москва" />
+    <meta property="og:title" content="Card game" />
+    <meta property="og:description" content="Card game" />
+    <meta property="og:type" content="article" />
+    <meta property="og:image" content="http://skill.gabow.ru/images/new_logo.png" />
+    <meta property="og:site_name" content="Card game" />
+    <meta property="og:url" content="http://skill.gabow.ru/" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@paul.gabow" />
+    <meta name="twitter:title" content="Card game" />
+    <meta name="twitter:description" content="Card game" />
+    <meta name="twitter:image" content="http://skill.gabow.ru/images/new_logo.png" />
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+
     <link rel="stylesheet" href="./css/style.css" />
     <title>Игра "Пары"</title>
   </head>
   <body>
-		<div class="screen start">
+    <div class="screen start">
       <h1 class="start__header">Игра "Пары"</h1>
       <p class="start__description">Ищем одинаковые пары карт</p>
-			<button class="btn start-btn level-btn" id="start">Начать игру</button>
+      <button class="btn start-btn level-btn" id="start">Начать игру</button>
     </div>
 
-		<div class="screen level">
-			<h1 class="level__header">Выберите уровень:</h1>
+    <div class="screen level">
+      <h1 class="level__header">Выберите уровень:</h1>
       <ul class="level__list" id="level-list">
         <li>
           <button class="btn level-btn" data-level="1">Просто</button>
@@ -29,16 +58,16 @@
       </ul>
     </div>
 
-		<div class="screen">
+    <div class="screen">
       <div class="container" id="board"></div>
     </div>
 
-		<div class="screen over">
+    <div class="screen over">
       <h1>Game over ;)</h1>
       <p class="over__description"></p>
       <p class="over__description-level"></p>
       <p class="over__description-time"></p>
-			<button class="btn start-btn level-btn" id="over">Начать игру</button>
+      <button class="btn start-btn level-btn" id="over">Начать игру</button>
     </div>
 
     <div class="modal" data-modal="1">
