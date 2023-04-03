@@ -102,19 +102,22 @@ const changeFace = (level = 2) => {
   const cardFace = document.querySelectorAll('.card > .card__face.card__face--back')
   cardFace.forEach(
     (i) =>
-      (i.style.backgroundImage = `url('img/bg${getRndInt(1,level)}.jpg')`)
+      (i.style.backgroundImage = `url('https://pgabow.github.io/card_game/img/bg${getRndInt(
+        1,
+        level
+      )}.jpg')`)
   )
   if (isOver) {
     cardFace[
       getRndInt(1, 15)
-    ].style.backgroundImage = `url('img/bg9.jpg')`
+    ].style.backgroundImage = `url('https://pgabow.github.io/card_game/img/bg9.jpg')`
     cardFace[
       getRndInt(1, 15)
-    ].style.backgroundImage = `url('img/bg10.jpg')`
+    ].style.backgroundImage = `url('https://pgabow.github.io/card_game/img/bg10.jpg')`
   } else {
     cardFace[
       getRndInt(1, 15)
-    ].style.backgroundImage = `url('img/bg10.jpg')`
+    ].style.backgroundImage = `url('https://pgabow.github.io/card_game/img/bg10.jpg')`
   }
 }
 
